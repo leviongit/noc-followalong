@@ -1,38 +1,20 @@
-def walker!(x, y, stride = 1)
-  $walker = {
-    x: x,
-    y: y,
-    w: stride * 2,
-    h: stride * 2,
-    anchor_x: 0.5,
-    anchor_y: 0.5,
-    stride: stride,
-    previous: nil
-  }
-end
-
-def walker_move
-  $walker.previous = {**$walker.except(:previous)}
-  $walker.previous.w /= 2.0
-  $walker.previous.h /= 2.0
-
-  dx = rand(3) - 1
-  dy = rand(3) - 1
-
-  stride = $walker.stride
-  $walker.x += dx * stride
-  $walker.y += dy * stride
-end
-
 def reset
-  $front ||= :rt
-  $back  ||= :tr
-  $front, $back = $back, $front
-
-  $outputs[$back].clear_before_render = true
+  $twidth = 20
+  $tally = [0] * $twidth
   
-  walker!(640, 360, 8)
   $gtk.set_rng(Time.new.to_f * 1000)
+end
+
+def wrand(max = 0)
+  x1 = rand(max)
+  x2 = rand(max)
+  x1 > x2 ? x1 : x2
+end
+
+def wminrand(max = 0)
+  x1 = rand(max)
+  x2 = rand(max)
+  x1 <= x2 ? x1 : x2
 end
 
 $gtk.disable_reset_via_ctrl_r
@@ -40,34 +22,24 @@ $gtk.disable_reset_via_ctrl_r
 def tick(args)
   outputs = args.outputs
   outputs.background_color = { r: 0, g: 0, b: 0, a: 255 }
-  rt = outputs[$front]
-  outputs[$back].transient!
-  rt.clear_before_render = false
-  rt.transient!
-  rt.background_color = { r: 0, g: 0, b: 0, a: 0 }
 
-  rt << {
-    **$walker,
-    g: 0,
-    b: 0,
-    path: :pixel
-  }
+  width = 1280 / $twidth
 
-  if $walker.previous
-    rt << {
-      **$walker.previous,
+  sum = $tally.sum
+  
+  outputs << ($twidth.map {
+    {
+      x: width * _1,
+      y: 0,
+      w: width,
+      h: ($tally[_1] / (sum.nonzero? || 1)) * 720,
       path: :pixel
     }
-  end
+  })
 
-  outputs << {
-    x: 0, y: 0,
-    w: 1280, h: 720,
-    path: $front
-  }
-
-  walker_move
-
+  $tally[wrand($twidth)] += 1
+  
+  
   kb = args.inputs.keyboard
   $gtk.reset if kb.key_down.r && kb.key_held.ctrl
 end
