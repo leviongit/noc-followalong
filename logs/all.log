@@ -12,3 +12,4 @@ If you want to disable this behavior, add the following to the top of =main.rb=:
 #+end_src
 
 NOTE: ~$gtk.disable_console~ will also disable the CTRL+R reset behavior.
+* INFO: The search results above has been seen in logs/puts.txt and docs/search_results.txt.

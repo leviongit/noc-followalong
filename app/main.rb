@@ -32,8 +32,7 @@ def reset
   $outputs[$back].clear_before_render = true
   
   walker!(640, 360, 8)
-  srand(t = Time.new.to_i)
-  $gtk.set_rng(t)
+  $gtk.set_rng(Time.new.to_f * 1000)
 end
 
 $gtk.disable_reset_via_ctrl_r

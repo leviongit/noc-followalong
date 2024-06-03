@@ -6,35 +6,42 @@
     $gtk.add_caller_to_puts!
   end
 #+end_src
--> args.outputs.target
+-> {a: 1}.slice(:a)
+=> {:a=>1}
+* AUTOCOMPLETE CANDIDATES: $gtk.s..
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|                     save_state |              scancode_down_raw |                scancode_up_raw |              schedule_callback |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|            scheduled_callbacks |           scheduled_callbacks= |                       sdl_tick |                           seed |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|                serialize_state |                     set_cursor |                 set_mouse_grab |            set_resize_occurred |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|                        set_rng |              set_system_cursor |          set_window_fullscreen |               set_window_scale |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|               set_window_title |                   show_console |                    show_cursor |   simulate_render_device_reset |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|  simulate_render_targets_reset |               simulation_speed |              simulation_speed= |          skip_tick_usr_engine? |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|                        slowmo! |            stage_replay_values |                start_recording |                   start_replay |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|                  start_server! |                     started_at |                    started_at= |                      stat_file |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|  state_assigned_to_nil_on_boot | state_assigned_to_nil_on_boot= |                     stop_music |                 stop_recording |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|                    stop_replay |         suggest_autocompletion |               suppress_hotload |              suppress_hotload= |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+|                         system |                                                                                                  |
++--------------------------------+--------------------------------+--------------------------------+--------------------------------+
+-> $gtk.seed
+=> 1717444471
+-> $gtk.set_rng
+
+* INFO: 0 matches(s) found in DOCS for ~set_rng~ (see above).
+You can search the documentation yourself using the following command in the Console:
+#+begin_src ruby
+  docs_search "set_rng"
+#+end_src
+
+* EXCEPTION: 'set_rng': wrong number of arguments (0 for 1)
+-> $gtk.set_rng 1
 => nil
--> args.outputs.target = rt
-* EXCEPTION: * ERROR - :rt method missing on ~Class~.
-The method named
-  :rt
-doesn't exist on
-  [Class].
-#+begin_src ~Class#inspect~
-GTK::ConsoleEvaluator
-#+end_src ~Class#inspect~ for :rt method missing on ~Class~
--> args.outputs.target = :rt
-=> rt
--> args.outputs.target = rt
-* EXCEPTION: * ERROR - :rt method missing on ~Class~.
-The method named
-  :rt
-doesn't exist on
-  [Class].
-#+begin_src ~Class#inspect~
-GTK::ConsoleEvaluator
-#+end_src ~Class#inspect~ for :rt method missing on ~Class~
--> args.outputs.target
-=> nil
--> args.outputs.target = :rt
-=> rt
--> args.outputs.target = :rt
-=> rt
-* AUTOCOMPLETE CANDIDATES: args.outputs.w..
-+--------+--------+--------+--------+
-|      w |     w= |  width | width= |
-+--------+--------+--------+--------+
