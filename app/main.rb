@@ -15,12 +15,13 @@ def walker_move
   $walker.previous = {**$walker.except(:previous)}
   $walker.previous.w /= 2.0
   $walker.previous.h /= 2.0
-  [
-    -> { $walker.x += $walker.stride },
-    -> { $walker.y += $walker.stride },
-    -> { $walker.x -= $walker.stride },
-    -> { $walker.y -= $walker.stride }
-  ][rand(4)][]
+
+  dx = rand(3) - 1
+  dy = rand(3) - 1
+
+  stride = $walker.stride
+  $walker.x += dx * stride
+  $walker.y += dy * stride
 end
 
 def reset
