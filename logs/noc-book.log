@@ -1,0 +1,325 @@
+* 000000 [Engine] Log started at 2024/6/3 21:17:14
+* 000000 [Engine] DragonRuby Game Toolkit
+* 000000 [Engine]   Version: 5.27
+* 000000 [Engine]   Tier: Pro
+* 000000 [Engine]   GIT Hash: 4149dcb6cd9032cf5384e3801cbfa42ef3621abd
+* 000000 [Engine]   Build Date: May 10 2024 23:37:26
+* 000000 [Engine] Platform: Linux
+- 000000 [Engine] Process Working Directory: /home/matthias/.local/share/smaug/dragonruby/pro-5.27/
+- 000000 [Engine] Game Dir: /mnt/files/dr/noc-book
+- 000000 [Engine] Game ID: noc-book
+- 000000 [Engine] Game Title: noc-book
+- 000000 [Engine] Game Version: 0.1.0
+- 000000 [Engine] Game Package ID: org.todo-change-me.noc-book
+- 000000 [Engine] Game Developer ID: todo-change-me
+- 000000 [Engine] Game Developer Title: My Name &lt;todo@example.com&gt;
+- 000000 [Engine] Production Build: no
+- 000000 [Engine] Remote Hotload: no
+- 000000 [Render] SDL video backend: x11
+- 000000 [Render] SDL renderer backend: opengl
+- 000000 [Render] Window size: 1280x720 (requested 1280x720)
+- 000000 [Render] Fullscreen Desktop mode: no
+- 000000 [Render] HD: no
+- 000000 [Render] HighDPI: no
+- 000000 [Render] Max texture size: 16384x16384 (system reported 16384x16384)
+- 000000 [Render] Logical render size: 1280x720
+- 000000 [Render] Native render size: 1280x720
+? 000000 [Engine] RNG seed has been set to 1717442234.
+- 000000 [Engine] Janitor is using 4 threads.
+- 000012 [Game] -> args.outputs.target
+- 000012 [Game] => nil
+- 000015 [Game] -> args.outputs.target = rt
+- 000015 [Game] * EXCEPTION: * ERROR - :rt method missing on ~Class~.
+The method named
+  :rt
+doesn't exist on
+  [Class].
+#+begin_src ~Class#inspect~
+GTK::ConsoleEvaluator
+#+end_src ~Class#inspect~ for :rt method missing on ~Class~
+- 000017 [Game] -> args.outputs.target = :rt
+- 000017 [Game] => rt
+- 000019 [Game] -> args.outputs.target = rt
+- 000019 [Game] * EXCEPTION: * ERROR - :rt method missing on ~Class~.
+The method named
+  :rt
+doesn't exist on
+  [Class].
+#+begin_src ~Class#inspect~
+GTK::ConsoleEvaluator
+#+end_src ~Class#inspect~ for :rt method missing on ~Class~
+- 000021 [Game] -> args.outputs.target
+- 000021 [Game] => nil
+- 000024 [Game] -> args.outputs.target = :rt
+- 000024 [Game] => rt
+- 000027 [Game] -> args.outputs.target = :rt
+- 000027 [Game] => rt
+? 000040 [Engine] ~reset~ has been invoked (2400).
+? 000040 [Engine] RNG seed has been set to 1717442234.
+? 000040 [Engine] Reloaded app/main.rb. (2400)
+- 000041 [Game] * INFO: You pressed CTRL+R which is a key combo reserved by DragonRuby.
+Pressing CTRL+R invokes ~$gtk.reset_next_tick~ (safely resetting your game with a convenient key combo).
+
+If you want to disable this behavior, add the following to the top of =main.rb=:
+
+#+begin_src
+  $gtk.disable_reset_via_ctrl_r
+
+  def tick args
+    ...
+  end
+#+end_src
+
+NOTE: ~$gtk.disable_console~ will also disable the CTRL+R reset behavior.
+
+? 000041 [Engine] ~reset_next_tick~ has been invoked (2457).
+? 000041 [Engine] ~reset~ has been invoked (2459).
+? 000041 [Engine] RNG seed has been set to 1717442234.
+? 000042 [Engine] ~reset_next_tick~ has been invoked (2545).
+? 000042 [Engine] ~reset~ has been invoked (2547).
+? 000042 [Engine] RNG seed has been set to 1717442234.
+? 000111 [Engine] ~reset~ has been invoked (6665).
+? 000111 [Engine] RNG seed has been set to 1717442234.
+? 000111 [Engine] Reloaded app/main.rb. (6665)
+? 000113 [Engine] ~reset_next_tick~ has been invoked (6820).
+? 000113 [Engine] ~reset~ has been invoked (6822).
+? 000113 [Engine] RNG seed has been set to 1717442234.
+? 000118 [Engine] ~reset~ has been invoked (7083).
+? 000118 [Engine] RNG seed has been set to 1717442234.
+? 000118 [Engine] Reloaded app/main.rb. (7083)
+? 000124 [Engine] ~reset~ has been invoked (7441).
+? 000124 [Engine] RNG seed has been set to 1717442234.
+? 000124 [Engine] Reloaded app/main.rb. (7441)
+? 000124 [Engine] ~reset_next_tick~ has been invoked (7471).
+? 000124 [Engine] ~reset~ has been invoked (7473).
+? 000124 [Engine] RNG seed has been set to 1717442234.
+? 000125 [Engine] ~reset_next_tick~ has been invoked (7489).
+? 000125 [Engine] ~reset~ has been invoked (7491).
+? 000125 [Engine] RNG seed has been set to 1717442234.
+? 000229 [Engine] ~reset~ has been invoked (13745).
+? 000229 [Engine] RNG seed has been set to 1717442234.
+? 000229 [Engine] Reloaded app/main.rb. (13745)
+? 000230 [Engine] ~reset_next_tick~ has been invoked (13839).
+? 000230 [Engine] ~reset~ has been invoked (13841).
+? 000230 [Engine] RNG seed has been set to 1717442234.
+? 000231 [Engine] ~reset_next_tick~ has been invoked (13893).
+? 000231 [Engine] ~reset~ has been invoked (13895).
+? 000231 [Engine] RNG seed has been set to 1717442234.
+? 000234 [Engine] ~reset_next_tick~ has been invoked (14029).
+? 000234 [Engine] ~reset~ has been invoked (14031).
+? 000234 [Engine] RNG seed has been set to 1717442234.
+? 000264 [Engine] ~reset~ has been invoked (15847).
+? 000264 [Engine] RNG seed has been set to 1717442234.
+? 000264 [Engine] Reloaded app/main.rb. (15847)
+? 000265 [Engine] ~reset_next_tick~ has been invoked (15894).
+? 000265 [Engine] ~reset~ has been invoked (15896).
+? 000265 [Engine] RNG seed has been set to 1717442234.
+? 000265 [Engine] ~reset_next_tick~ has been invoked (15926).
+? 000265 [Engine] ~reset~ has been invoked (15928).
+? 000265 [Engine] RNG seed has been set to 1717442234.
+? 000266 [Engine] ~reset_next_tick~ has been invoked (15959).
+? 000266 [Engine] ~reset~ has been invoked (15961).
+? 000266 [Engine] RNG seed has been set to 1717442234.
+? 000266 [Engine] ~reset_next_tick~ has been invoked (15989).
+? 000266 [Engine] ~reset~ has been invoked (15991).
+? 000266 [Engine] RNG seed has been set to 1717442234.
+? 000267 [Engine] ~reset_next_tick~ has been invoked (16012).
+? 000267 [Engine] ~reset~ has been invoked (16014).
+? 000267 [Engine] RNG seed has been set to 1717442234.
+? 000267 [Engine] ~reset_next_tick~ has been invoked (16044).
+? 000267 [Engine] ~reset~ has been invoked (16046).
+? 000267 [Engine] RNG seed has been set to 1717442234.
+? 000268 [Engine] ~reset_next_tick~ has been invoked (16064).
+? 000268 [Engine] ~reset~ has been invoked (16066).
+? 000268 [Engine] RNG seed has been set to 1717442234.
+? 000269 [Engine] ~reset_next_tick~ has been invoked (16131).
+? 000269 [Engine] ~reset~ has been invoked (16133).
+? 000269 [Engine] RNG seed has been set to 1717442234.
+? 000269 [Engine] ~reset_next_tick~ has been invoked (16150).
+? 000269 [Engine] ~reset~ has been invoked (16152).
+? 000269 [Engine] RNG seed has been set to 1717442234.
+? 000274 [Engine] ~reset_next_tick~ has been invoked (16431).
+? 000274 [Engine] ~reset~ has been invoked (16433).
+? 000274 [Engine] RNG seed has been set to 1717442234.
+? 000274 [Engine] ~reset_next_tick~ has been invoked (16453).
+? 000274 [Engine] ~reset~ has been invoked (16455).
+? 000274 [Engine] RNG seed has been set to 1717442234.
+? 000274 [Engine] ~reset_next_tick~ has been invoked (16477).
+? 000274 [Engine] ~reset~ has been invoked (16479).
+? 000274 [Engine] RNG seed has been set to 1717442234.
+? 000275 [Engine] ~reset_next_tick~ has been invoked (16506).
+? 000275 [Engine] ~reset~ has been invoked (16508).
+? 000275 [Engine] RNG seed has been set to 1717442234.
+? 000275 [Engine] ~reset_next_tick~ has been invoked (16530).
+? 000275 [Engine] ~reset~ has been invoked (16532).
+? 000275 [Engine] RNG seed has been set to 1717442234.
+? 000276 [Engine] ~reset_next_tick~ has been invoked (16554).
+? 000276 [Engine] ~reset~ has been invoked (16556).
+? 000276 [Engine] RNG seed has been set to 1717442234.
+? 000276 [Engine] ~reset_next_tick~ has been invoked (16578).
+? 000276 [Engine] ~reset~ has been invoked (16580).
+? 000276 [Engine] RNG seed has been set to 1717442234.
+? 000332 [Engine] ~reset~ has been invoked (19947).
+? 000332 [Engine] RNG seed has been set to 1717442234.
+? 000332 [Engine] Reloaded app/main.rb. (19947)
+# 000332 [Render] * WARNING: You are rendering to a non-transient render target multiple
+# 000332 [Render] frames in a row. This is a performance hit. If you intend to draw to a
+# 000332 [Render] render target that is only used later in the same frame, mark it as
+# 000332 [Render] transient ~outputs[:rt].transient! # sets render_target transient = true~ (so we know NOT to cache it).
+# 000332 [Render] If you have recently reset your game via $gtk.reset, then ignore this warning.
+# 000332 [Render] Render target's name: 'rt'
+? 000336 [Engine] ~reset_next_tick~ has been invoked (20160).
+? 000336 [Engine] ~reset~ has been invoked (20162).
+? 000336 [Engine] RNG seed has been set to 1717442234.
+# 000336 [Render] * WARNING: You are rendering to a non-transient render target multiple
+# 000336 [Render] frames in a row. This is a performance hit. If you intend to draw to a
+# 000336 [Render] render target that is only used later in the same frame, mark it as
+# 000336 [Render] transient ~outputs[:tr].transient! # sets render_target transient = true~ (so we know NOT to cache it).
+# 000336 [Render] If you have recently reset your game via $gtk.reset, then ignore this warning.
+# 000336 [Render] Render target's name: 'tr'
+? 000336 [Engine] ~reset_next_tick~ has been invoked (20197).
+? 000336 [Engine] ~reset~ has been invoked (20199).
+? 000336 [Engine] RNG seed has been set to 1717442234.
+? 000337 [Engine] ~reset_next_tick~ has been invoked (20238).
+? 000337 [Engine] ~reset~ has been invoked (20240).
+? 000337 [Engine] RNG seed has been set to 1717442234.
+? 000338 [Engine] ~reset_next_tick~ has been invoked (20284).
+? 000338 [Engine] ~reset~ has been invoked (20286).
+? 000338 [Engine] RNG seed has been set to 1717442234.
+? 000345 [Engine] ~reset~ has been invoked (20701).
+? 000345 [Engine] RNG seed has been set to 1717442234.
+? 000345 [Engine] Reloaded app/main.rb. (20701)
+? 000346 [Engine] ~reset_next_tick~ has been invoked (20762).
+? 000346 [Engine] ~reset~ has been invoked (20764).
+? 000346 [Engine] RNG seed has been set to 1717442234.
+? 000347 [Engine] ~reset_next_tick~ has been invoked (20818).
+? 000347 [Engine] ~reset~ has been invoked (20820).
+? 000347 [Engine] RNG seed has been set to 1717442234.
+? 000386 [Engine] ~reset~ has been invoked (23162).
+? 000386 [Engine] RNG seed has been set to 1717442234.
+? 000386 [Engine] Reloaded app/main.rb. (23162)
+? 000387 [Engine] ~reset_next_tick~ has been invoked (23214).
+? 000387 [Engine] ~reset~ has been invoked (23216).
+? 000387 [Engine] RNG seed has been set to 1717442234.
+? 000387 [Engine] ~reset_next_tick~ has been invoked (23250).
+? 000387 [Engine] ~reset~ has been invoked (23252).
+? 000387 [Engine] RNG seed has been set to 1717442234.
+? 000388 [Engine] ~reset_next_tick~ has been invoked (23294).
+? 000388 [Engine] ~reset~ has been invoked (23296).
+? 000388 [Engine] RNG seed has been set to 1717442234.
+? 000389 [Engine] ~reset_next_tick~ has been invoked (23341).
+? 000389 [Engine] ~reset~ has been invoked (23343).
+? 000389 [Engine] RNG seed has been set to 1717442234.
+? 000389 [Engine] ~reset_next_tick~ has been invoked (23380).
+? 000389 [Engine] ~reset~ has been invoked (23382).
+? 000389 [Engine] RNG seed has been set to 1717442234.
+? 000394 [Engine] ~reset~ has been invoked (23629).
+? 000394 [Engine] RNG seed has been set to 1717442234.
+? 000394 [Engine] Reloaded app/main.rb. (23629)
+? 000395 [Engine] ~reset_next_tick~ has been invoked (23696).
+? 000395 [Engine] ~reset~ has been invoked (23698).
+? 000395 [Engine] RNG seed has been set to 1717442234.
+? 000395 [Engine] ~reset_next_tick~ has been invoked (23726).
+? 000395 [Engine] ~reset~ has been invoked (23728).
+? 000395 [Engine] RNG seed has been set to 1717442234.
+? 000610 [Engine] ~reset~ has been invoked (36594).
+? 000610 [Engine] RNG seed has been set to 1717442234.
+? 000610 [Engine] Reloaded app/main.rb. (36594)
+? 000615 [Engine] ~reset~ has been invoked (36895).
+? 000615 [Engine] RNG seed has been set to 1717442234.
+? 000615 [Engine] Reloaded app/main.rb. (36895)
+? 000618 [Engine] ~reset~ has been invoked (37076).
+? 000618 [Engine] RNG seed has been set to 1717442234.
+? 000618 [Engine] Reloaded app/main.rb. (37076)
+? 000626 [Engine] ~reset~ has been invoked (37557).
+? 000626 [Engine] RNG seed has been set to 1717442234.
+? 000626 [Engine] Reloaded app/main.rb. (37557)
+? 000627 [Engine] ~reset~ has been invoked (37618).
+? 000627 [Engine] RNG seed has been set to 1717442234.
+? 000627 [Engine] Reloaded app/main.rb. (37618)
+- 000723 [Game] * AUTOCOMPLETE CANDIDATES: args.outputs.w..
+- 000723 [Game] +--------+--------+--------+--------+
+- 000723 [Game] |      w |     w= |  width | width= |
+- 000723 [Game] +--------+--------+--------+--------+
+? 000751 [Engine] ~reset~ has been invoked (45059).
+? 000751 [Engine] RNG seed has been set to 1717442234.
+? 000751 [Engine] Reloaded app/main.rb. (45059)
+? 000752 [Engine] ~reset_next_tick~ has been invoked (45162).
+? 000752 [Engine] ~reset~ has been invoked (45164).
+? 000752 [Engine] RNG seed has been set to 1717442234.
+? 000756 [Engine] ~reset_next_tick~ has been invoked (45393).
+? 000756 [Engine] ~reset~ has been invoked (45395).
+? 000756 [Engine] RNG seed has been set to 1717442234.
+? 000762 [Engine] ~reset_next_tick~ has been invoked (45720).
+? 000762 [Engine] ~reset~ has been invoked (45722).
+? 000762 [Engine] RNG seed has been set to 1717442234.
+? 000774 [Engine] ~reset~ has been invoked (46445).
+? 000774 [Engine] RNG seed has been set to 1717442234.
+? 000774 [Engine] Reloaded app/main.rb. (46445)
+? 000775 [Engine] ~reset_next_tick~ has been invoked (46503).
+? 000775 [Engine] ~reset~ has been invoked (46505).
+? 000775 [Engine] RNG seed has been set to 1717442234.
+? 000775 [Engine] ~reset_next_tick~ has been invoked (46533).
+? 000775 [Engine] ~reset~ has been invoked (46535).
+? 000775 [Engine] RNG seed has been set to 1717442234.
+? 000776 [Engine] ~reset_next_tick~ has been invoked (46559).
+? 000776 [Engine] ~reset~ has been invoked (46561).
+? 000776 [Engine] RNG seed has been set to 1717442234.
+? 000776 [Engine] ~reset_next_tick~ has been invoked (46581).
+? 000776 [Engine] ~reset~ has been invoked (46583).
+? 000776 [Engine] RNG seed has been set to 1717442234.
+? 000810 [Engine] ~reset~ has been invoked (48605).
+? 000810 [Engine] RNG seed has been set to 1717442234.
+? 000810 [Engine] Reloaded app/main.rb. (48605)
+? 000811 [Engine] ~reset_next_tick~ has been invoked (48690).
+? 000811 [Engine] ~reset~ has been invoked (48692).
+? 000811 [Engine] RNG seed has been set to 1717442234.
+? 000812 [Engine] ~reset_next_tick~ has been invoked (48713).
+? 000812 [Engine] ~reset~ has been invoked (48715).
+? 000812 [Engine] RNG seed has been set to 1717442234.
+? 000838 [Engine] ~reset~ has been invoked (50285).
+? 000838 [Engine] RNG seed has been set to 1717442234.
+? 000838 [Engine] Reloaded app/main.rb. (50285)
+? 000838 [Engine] ~reset_next_tick~ has been invoked (50307).
+? 000838 [Engine] ~reset~ has been invoked (50309).
+? 000838 [Engine] RNG seed has been set to 1717442234.
+? 000839 [Engine] ~reset_next_tick~ has been invoked (50324).
+? 000839 [Engine] ~reset~ has been invoked (50326).
+? 000839 [Engine] RNG seed has been set to 1717442234.
+? 000839 [Engine] ~reset_next_tick~ has been invoked (50359).
+? 000839 [Engine] ~reset~ has been invoked (50361).
+? 000839 [Engine] RNG seed has been set to 1717442234.
+? 000840 [Engine] ~reset_next_tick~ has been invoked (50400).
+? 000840 [Engine] ~reset~ has been invoked (50402).
+? 000840 [Engine] RNG seed has been set to 1717442234.
+? 000840 [Engine] ~reset_next_tick~ has been invoked (50438).
+? 000840 [Engine] ~reset~ has been invoked (50440).
+? 000840 [Engine] RNG seed has been set to 1717442234.
+? 001124 [Engine] ~reset~ has been invoked (67481).
+? 001124 [Engine] RNG seed has been set to 1717442234.
+? 001124 [Engine] Reloaded app/main.rb. (67481)
+? 001128 [Engine] ~reset_next_tick~ has been invoked (67671).
+? 001128 [Engine] ~reset~ has been invoked (67673).
+? 001128 [Engine] RNG seed has been set to 1717442234.
+? 001128 [Engine] ~reset_next_tick~ has been invoked (67699).
+? 001128 [Engine] ~reset~ has been invoked (67701).
+? 001128 [Engine] RNG seed has been set to 1717442234.
+? 001129 [Engine] ~reset_next_tick~ has been invoked (67724).
+? 001129 [Engine] ~reset~ has been invoked (67726).
+? 001129 [Engine] RNG seed has been set to 1717442234.
+? 001370 [Engine] ~reset~ has been invoked (82219).
+? 001370 [Engine] RNG seed has been set to 1717442234.
+? 001370 [Engine] Reloaded app/main.rb. (82219)
+? 001589 [Engine] ~reset~ has been invoked (95327).
+? 001589 [Engine] RNG seed has been set to 1717442234.
+? 001589 [Engine] Reloaded app/main.rb. (95327)
+? 001594 [Engine] ~reset_next_tick~ has been invoked (95668).
+? 001594 [Engine] ~reset~ has been invoked (95670).
+? 001594 [Engine] RNG seed has been set to 1717442234.
+? 001595 [Engine] ~reset_next_tick~ has been invoked (95695).
+? 001595 [Engine] ~reset~ has been invoked (95697).
+? 001595 [Engine] RNG seed has been set to 1717442234.
+? 001603 [Engine] ~reset_next_tick~ has been invoked (96190).
+? 001603 [Engine] ~reset~ has been invoked (96192).
+? 001603 [Engine] RNG seed has been set to 1717442234.
+* 001604 [Engine] Logging shutting down

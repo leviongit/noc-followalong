@@ -1,0 +1,12 @@
+$gtk.reset seed: 1717440933
+$outputs.clear_before_render
+$gtk.outputs
+$gtk.outputs.class
+$args.outputs.class
+args.outputs.target
+args.outputs.target = rt
+args.outputs.target = :rt
+args.outputs.target = rt
+args.outputs.target
+args.outputs.target = :rt
+args.outputs.target = :rt

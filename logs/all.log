@@ -1,0 +1,14 @@
+* INFO: You pressed CTRL+R which is a key combo reserved by DragonRuby.
+Pressing CTRL+R invokes ~$gtk.reset_next_tick~ (safely resetting your game with a convenient key combo).
+
+If you want to disable this behavior, add the following to the top of =main.rb=:
+
+#+begin_src
+  $gtk.disable_reset_via_ctrl_r
+
+  def tick args
+    ...
+  end
+#+end_src
+
+NOTE: ~$gtk.disable_console~ will also disable the CTRL+R reset behavior.

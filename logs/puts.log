@@ -1,0 +1,40 @@
+* INFO - If you need to find rogue puts statements do:
+#+begin_src
+  def tick args
+    # adding the following line to the TOP of your tick method
+    # will print ~caller~ along side each ~puts~ statement
+    $gtk.add_caller_to_puts!
+  end
+#+end_src
+-> args.outputs.target
+=> nil
+-> args.outputs.target = rt
+* EXCEPTION: * ERROR - :rt method missing on ~Class~.
+The method named
+  :rt
+doesn't exist on
+  [Class].
+#+begin_src ~Class#inspect~
+GTK::ConsoleEvaluator
+#+end_src ~Class#inspect~ for :rt method missing on ~Class~
+-> args.outputs.target = :rt
+=> rt
+-> args.outputs.target = rt
+* EXCEPTION: * ERROR - :rt method missing on ~Class~.
+The method named
+  :rt
+doesn't exist on
+  [Class].
+#+begin_src ~Class#inspect~
+GTK::ConsoleEvaluator
+#+end_src ~Class#inspect~ for :rt method missing on ~Class~
+-> args.outputs.target
+=> nil
+-> args.outputs.target = :rt
+=> rt
+-> args.outputs.target = :rt
+=> rt
+* AUTOCOMPLETE CANDIDATES: args.outputs.w..
++--------+--------+--------+--------+
+|      w |     w= |  width | width= |
++--------+--------+--------+--------+
